@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runner Mascot Chat</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #CE0289;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .mascot {
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        #conversation {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .message {
+            margin: 10px 0;
+        }
+
+        .message.user {
+            text-align: right;
+            color: blue;
+        }
+
+        .message.mascot {
+            text-align: left;
+            color: green;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+<body>
+    <div class="container">
+        <img src="Runner mascot.png" alt="Runner Mascot" class="mascot">
+        <h1>Ask the Runner Guru anything!</h1>
+        <div id="conversation"></div>
+        <input type="text" id="user-input" placeholder="Type your question here">
+        <button onclick="askMascot()">Ask</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
